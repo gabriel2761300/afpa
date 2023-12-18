@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css);
+body{
+    background-image: url(/avenger_css/img/fond.png);
+    margin: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    background-color: rgb(255, 232, 100);
+    max-width: 750px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+
+  main {
+    max-width: 750px;
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px 0;
+  }
+
+  nav a {
+    font-family: "oswald",sans-serif;
+    background-color: transparent;
+    text-decoration-line: none;
+    color:orange;
+    padding:0 20px ;
+  }
+
+  main a{
+    padding: 5px;
+    float: right;
+    text-decoration-line: none;
+    background-color: orangered;
+    color: white;
+    margin-right: 10px;
+  }
+
+  article{
+    margin: 0 10px;
+  }
+
+  article img{
+    float: left;
+    width: 40%;
+  }
+
+  article a{
+    margin-bottom: 10px;
+  }
+
+  h2{
+    
+    color: orangered;
+    font-size: 24px;
+    font-family: "oswald",sans-serif;
+  }
+
+  p{
+    word-spacing: 5px;
+    margin: 0 auto;
+    width: 95%;
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  footer{
+    
+    max-width: 750px;
+    text-align: center;
+    margin: 10px auto;
+  }

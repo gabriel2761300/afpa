@@ -1,0 +1,32 @@
+body {
+  background-image: url(/photo_css/images/bg.jpg);
+  max-width: 1200px;
+  margin: auto;
+  color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.galerie{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  border: solid;
+  border-color: white;
+}
+
+.galerie img{
+  transition: transform 0.3s ease;
+  filter: grayscale(100%) sepia(1);
+}
+
+.galerie img:hover {
+  transform: scale(1.4);
+  z-index: 1;
+  filter: none;
+}
