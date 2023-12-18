@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <form name="formulaireBootstrap" post="get" action="/request">
+        <div id="divInsert" class="form-row  align-items-center">
+
+            <h1 class="col-12 text-center display-4">Le Pendu</h1>
+
+            <div id="champSaisie" class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <label class="sr-only" for="motDuPendu">Name</label>
+                        <input type="text" class="form-control mb-2" id="motDuPendu">
+                    </div>
+
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-primary mb-2">Entrer un mot !</button>
+                    </div>
+                </div>
+            </div>
+            <div id="champSaisie2" class="col-12">
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <label class="sr-only" for="lettreDuPendu">Name</label>
+                        <input type="text" class="form-control mb-2" id="lettreDuPendu">
+                    </div>
+
+                    <div class="col-auto">
+                        <button type="button" class="btn btn-primary mb-2">Commencer</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div id="resultat" class="col-12 text-center">
+            <div id="motTrouve" class="col-auto">
+            </div>
+        </div>
+    </div>
+    </form>
+
+    <div class="row justify-content-center">
+        <div class="col-auto mr-1 border text-center">
+            <canvas id="dessinPendu" width="300px" height="300px">
+            </canvas>
+        </div>
+        <div id="Score" class="col-auto ml-1 border">
+            <div class="d-flex  flex-column justify-content-center align-content-around">
+                <p id="Message" > Veuillez saisir un mot a trouver ! </p>
+                <p id="NbCoup"  ></p>
+                <p id="NbRestant"  ></p>
+            </div>
+        </div>
+    </div>
+    <div class="container text-center">
+            <input type="button" value = "recommencer" onclick="history.go(0)" />
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="/jeux pendu/pendu.js"></script>
+</body>
+</html>
